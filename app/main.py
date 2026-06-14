@@ -11,6 +11,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",  # React dev server
+        "https://iwealthfund.netlify.app",  # Deployed frontend
     ],
     allow_credentials=True,
     allow_methods=["*"],

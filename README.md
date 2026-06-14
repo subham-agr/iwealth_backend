@@ -332,3 +332,7 @@ For issues or questions:
 2. Review inline code comments in `app/analytics/`
 3. Check API response format in `app/models/schemas.py`
 4. Review test cases in `tests/`
+
+## AI Usage
+- The helper functions and all logical functions is built using ChatGPT step by step to verify and create the data flow logic
+- Cursor is used to add additional error handling and simplification changes
