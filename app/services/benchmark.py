@@ -11,17 +11,19 @@ BASE_URL = (
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
-    "Accept": "application/json",
+    "Accept": "application/json,text/plain,*/*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Referer": "https://www.nseindia.com/",
+    "Connection": "keep-alive",
 }
 
 def create_nse_session():
 
     session = requests.Session()
 
-    session.headers.update(HEADERS)
-
     session.get(
         "https://www.nseindia.com",
+        headers=HEADERS,
         timeout=30,
     )
 
